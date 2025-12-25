@@ -32,5 +32,7 @@ def plot_sales_over_time(data):
     ax.set_ylabel("Total Sales")
     plt.xticks(rotation=45)
     plt.tight_layout()
+    ax.grid(True, alpha=0.3)
+    fig.autofmt_xdate()
 
     return fig
